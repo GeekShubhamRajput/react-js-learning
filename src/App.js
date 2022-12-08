@@ -1,16 +1,14 @@
 import './App.css';
-import Greet from './components/Greet'
-import Welcome from './components/Welcome'
-import Hello from './components/Hello'
+import NameAndRole from './components/NameAndRole'
+import NameAndTechnology from './components/NameAndTechnology'
 
 function App() {
   return (
     <div className="App">
-      <Greet />
-      <Welcome />
-      <Hello />
+      <NameAndRole name="Shubham" roleName="Sr. Software Engineer">This is inside component</NameAndRole>
+      <NameAndTechnology name="John" technologyName="Ruby"> This is inner para </NameAndTechnology>
     </div>
-  );
+  )
 }
 
 export default App;
