@@ -1,10 +1,10 @@
 import './App.css';
-import ReactState from './components/ReactState'
+import Counter from './components/Counter'
 
 function App() {
   return (
     <div className="App">
-      <ReactState />
+      <Counter />
     </div>
   );
 }
