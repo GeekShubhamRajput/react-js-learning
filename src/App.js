@@ -1,12 +1,14 @@
 import './App.css';
-import Salutations from "./components/Salutations"
+import FunctionClick from "./components/FunctionClick"
+import ClassClick from "./components/ClassClick"
 
 function App() {
   return (
     <div className="App">
-      <Salutations name="John" roleName="Manager" />
+      <FunctionClick />
+      <ClassClick />
     </div>
-  );
+  )
 }
 
 export default App;
