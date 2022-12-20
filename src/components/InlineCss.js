@@ -1,7 +1,7 @@
 import React from 'react'
 
 const heading = {
-  color: "red"
+  color: "orange"
 }
 
 function InlineCss(){
