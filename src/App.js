@@ -4,6 +4,7 @@ import PersonList from "./components/PersonList"
 import CarCompany from "./components/CarCompany"
 import "./myStyle.css"
 import StyleSheet from "./components/StyleSheet"
+import InlineCss from "./components/InlineCss"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       { /* <PersonList /> */ }
       { /* <CarCompany /> */ }
       <StyleSheet primary={false} />
+      <InlineCss />
     </div>
   )
 }
