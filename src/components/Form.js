@@ -9,7 +9,7 @@ class Form extends Component{
     this.state = {
       username: '',
       comment: '',
-      language: ''
+      languages: []
     }
   }
 
@@ -22,11 +22,12 @@ class Form extends Component{
   }
 
   handleLanguageChange = (event) => {
-    this.setState({language: event.target.value}) 
+    let value = Array.from(event.target.selectedOptions, option => option.value);
+    this.setState({languages: value});
   }
 
   handleSubmit = (event) => {
-    alert(`Username: ${this.state.username} Comment: ${this.state.comment} Language: ${this.state.language}`)
+    alert(`Username: ${this.state.username} Comment: ${this.state.comment} Language: ${this.state.languages}`)
     event.preventDefault();
   }
 
@@ -45,7 +46,7 @@ class Form extends Component{
           </div>
           <div>
             <label>Language</label>
-            <select value={this.state.language} onChange={this.handleLanguageChange}>
+            <select multiple={true} value={this.state.languages} onChange={this.handleLanguageChange}>
               <option value="angular">Angular</option>
               <option value="vue">Vue</option>
               <option value="react">React</option>
