@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import LifecycleB from './LifecycleB'
 
 class LifecycleA extends Component{
   constructor(props){
@@ -21,12 +20,33 @@ class LifecycleA extends Component{
     console.log("Lifecycle A componentDidMount")
   }
 
+  shouldComponentUpdate(nextProps, nextState){
+    console.log("Lifecycle A shouldComponentUpdate")
+    return true
+  }
+
+  getSnapshotBeforeUpdate(prevProps, prevState){
+    console.log("Lifecycle A getSnapshotBeforeUpdate")
+    return true
+  }
+
+  componentDidUpdate(prevState, prevProps){
+    console.log("Lifecycle A componentDidUpdate")
+  }
+
+  changeState = () =>{
+    this.setState({
+      name: "John Doe"
+    })
+  }
+
   render(){
     console.log("Lifecycle A render")
     return(
       <div>
         <h4>Component Lifecycle A</h4>
-        <LifecycleB />
+        <button onClick={this.changeState}>Change Name</button> 
+        <h3>{this.state.name}</h3>
       </div>
     )
   }
