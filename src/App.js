@@ -1,10 +1,12 @@
 import './App.css';
-import LifecycleA from "./components/LifecycleA"
+import FragmentDemo from "./components/FragmentDemo"
+import FragmentDemo2 from "./components/FragmentDemo2"
 
 function App() {
   return (
     <div className="App">
-      <LifecycleA />
+      <FragmentDemo />
+      <FragmentDemo2 />
     </div>
   )
 }
