@@ -1,10 +1,10 @@
 import './App.css';
-import ParentComp from "./components/ParentComp"
+import RefDemo from "./components/RefsDemo"
 
 function App() {
   return (
     <div className="App">
-      <ParentComp />
+      <RefDemo />
     </div>
   )
 }
