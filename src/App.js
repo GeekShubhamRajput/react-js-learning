@@ -1,10 +1,10 @@
 import './App.css';
-import RefDemo from "./components/RefsDemo"
+import FocusRef from "./components/FocusRef"
 
 function App() {
   return (
     <div className="App">
-      <RefDemo />
+      <FocusRef />
     </div>
   )
 }
