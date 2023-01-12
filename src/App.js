@@ -1,22 +1,13 @@
 import './App.css';
-import ClickCounterTwo from "./components/ClickCounterTwo"
-import HoverCounterTwo from "./components/HoverCounterTwo"
-import CounterTwo from "./components/CounterTwo"
+import ComponentA from "./components/ComponentA"
+import {UserProvider} from "./components/UserContext"
 
 function App() {
   return (
     <div className="App">
-      <CounterTwo>
-        {(count, incrementCounter) => (
-          <ClickCounterTwo count={count} incrementCounter={incrementCounter} />
-        )} 
-      </ CounterTwo>
-
-      <CounterTwo>
-        {(count, incrementCounter) => (
-          <HoverCounterTwo count={count} incrementCounter={incrementCounter} />
-        )} 
-      </ CounterTwo>
+      <UserProvider value="Shubham">
+        <ComponentA />
+      </ UserProvider>
     </div>
   )
 }
