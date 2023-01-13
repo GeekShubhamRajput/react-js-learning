@@ -1,11 +1,10 @@
 import './App.css';
-import ComponentA from "./components/ComponentA"
-import {UserProvider} from "./components/UserContext"
+import PostList from "./components/PostList"
 
 function App() {
   return (
     <div className="App">
-      <ComponentA />
+      <PostList />
     </div>
   )
 }
