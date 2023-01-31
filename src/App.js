@@ -1,10 +1,10 @@
 import './App.css';
-import UseStateHook from "./components/UseStateHook"
+import ItemArray from "./components/ItemArray"
 
 function App() {
   return (
     <div className="App">
-      <UseStateHook />
+      <ItemArray />
     </div>
   )
 }
