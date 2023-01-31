@@ -1,10 +1,10 @@
 import './App.css';
-import HookCounterTwo from "./components/HookCounterTwo"
+import UseStateHook from "./components/UseStateHook"
 
 function App() {
   return (
     <div className="App">
-      <HookCounterTwo />
+      <UseStateHook />
     </div>
   )
 }
