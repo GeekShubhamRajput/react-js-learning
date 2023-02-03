@@ -1,10 +1,10 @@
 import './App.css';
-import ItemArray from "./components/ItemArray"
+import HookCounterOne from "./components/HookCounterOne"
 
 function App() {
   return (
     <div className="App">
-      <ItemArray />
+      <HookCounterOne />
     </div>
   )
 }
