@@ -6,7 +6,8 @@ class ClassMouse extends Component{
     super()
     this.state = {
       x: 0,
-      y: 0
+      y: 0,
+
     }
   }
 
@@ -16,6 +17,10 @@ class ClassMouse extends Component{
 
   componentDidMount(){
     window.addEventListener('mousemove', this.logMousePosition)
+  }
+
+  componentWillUnmount(){
+    window.removeEventListener('mousemove', this.logMousePosition)
   }
 
   render(){
