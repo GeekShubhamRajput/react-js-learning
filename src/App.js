@@ -1,13 +1,11 @@
 import React from 'react'
 import './App.css';
-import IntervalClassCounter from "./components/IntervalClassCounter"
-import HookIntervalCounter from "./components/HookIntervalCounter"
+import DataFetching from "./components/DataFetching"
 
 function App() {
-  return (
+  return(
     <div className="App">
-      <IntervalClassCounter />
-      <HookIntervalCounter />
+      <DataFetching />
     </div>
   )
 }
