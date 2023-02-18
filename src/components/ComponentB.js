@@ -1,9 +1,9 @@
 import React from 'react'
-import ComponentC from "./ComponentC"
+import HookComponentC from "./HookComponentC"
 
 function ComponentB(){
   return(
-    <ComponentC />
+    <HookComponentC />
   )
 }
 
