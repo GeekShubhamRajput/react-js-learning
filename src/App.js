@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css';
-import ParentComponent from "./components/ParentComponent"
+import MemoHookCounter from "./components/MemoHookCounter"
 
 function App() {
   return(
     <div className="App">
-      <ParentComponent />
+      <MemoHookCounter />
     </div>
   )
 }
