@@ -1,11 +1,13 @@
 import React from 'react'
 import './App.css';
-import FocusRefHook from "./components/FocusRefHook"
+import ClassTimer from "./components/ClassTimer"
+import HookTimer from "./components/HookTimer"
 
 function App() {
   return(
     <div className="App">
-      <FocusRefHook />
+      <ClassTimer />
+      <HookTimer />
     </div>
   )
 }
