@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css';
-import MemoHookCounter from "./components/MemoHookCounter"
+import FocusRefHook from "./components/FocusRefHook"
 
 function App() {
   return(
     <div className="App">
-      <MemoHookCounter />
+      <FocusRefHook />
     </div>
   )
 }
