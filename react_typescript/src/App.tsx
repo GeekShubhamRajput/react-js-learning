@@ -2,6 +2,7 @@ import {Greet} from "./components/Greet"
 import {Person} from "./components/Person"
 import {PersonList} from "./components/PersonList"
 import {Status} from "./components/Status"
+import {Heading} from "./components/Heading"
 import './App.css';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Person name={personName} />
       <PersonList names={nameList} />
       <Status status="success" />
+      <Heading>This is from app</Heading>
     </div>
   );
 }
