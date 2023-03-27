@@ -3,6 +3,7 @@ import {Person} from "./components/Person"
 import {PersonList} from "./components/PersonList"
 import {Status} from "./components/Status"
 import {Heading} from "./components/Heading"
+import {Oscar} from "./components/Oscar"
 import './App.css';
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
       <PersonList names={nameList} />
       <Status status="success" />
       <Heading>This is from app</Heading>
+      <Oscar><h1>This is from app component for Oscar component</h1></Oscar>
+      <Greet name="John" isLoggedIn={true} />
     </div>
   );
 }
