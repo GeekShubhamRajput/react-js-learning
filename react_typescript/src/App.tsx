@@ -5,6 +5,7 @@ import {Status} from "./components/Status"
 import {Heading} from "./components/Heading"
 import {Oscar} from "./components/Oscar"
 import {Button} from "./components/Button"
+import {Input} from "./components/Input"
 import './App.css';
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
       <Oscar><h1>This is from app component for Oscar component</h1></Oscar>
       <Greet name="John" isLoggedIn={true} />
       <Button handleClick={(event, id)=>{console.log('Button clicked', event, id)}} />
+      <br/><br/>
+      <Input value="" handleChange={event => console.log(event)} />
     </div>
   );
 }
