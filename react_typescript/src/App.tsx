@@ -1,10 +1,15 @@
-import {Status} from "./components/Status"
+import {Person} from "./components/Person"
 import './App.css';
 
 function App() {
+  const personName = {
+    first: "Shubham",
+    last: "Rajput",
+  }
+
   return (
     <div className="App">
-      <Status status='loading' />
+      <Person name={personName} />
     </div>
   );
 }
