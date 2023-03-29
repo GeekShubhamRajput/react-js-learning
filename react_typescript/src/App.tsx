@@ -1,15 +1,26 @@
-import {Person} from "./components/Person"
+import {PersonList} from "./components/PersonList"
 import './App.css';
 
 function App() {
-  const personName = {
-    first: "Shubham",
-    last: "Rajput",
-  }
+  
+  const nameList = [
+    { 
+      first: 'John',
+      last: 'Wayne'
+    },
+    { 
+      first: 'B',
+      last: 'Putin'
+    },
+    { 
+      first: 'Bella',
+      last: 'T'
+    }
+  ]
 
   return (
     <div className="App">
-      <Person name={personName} />
+      <PersonList names={nameList} />
     </div>
   );
 }
