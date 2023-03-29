@@ -1,10 +1,10 @@
-import {Container} from "./components/Container"
+import {Status} from "./components/Status"
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Container styles={{ border: '1px solid black', padding: '1rem', display: 'inline' }} />
+      <Status status='loading' />
     </div>
   );
 }
