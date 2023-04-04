@@ -1,5 +1,7 @@
 import {LoggedIn} from "./components/LoggedIn"
 import {User} from "./components/User"
+import {AuthUser} from "./components/AuthUser"
+
 import './App.css';
 
 function App() {
@@ -8,6 +10,8 @@ function App() {
       <LoggedIn />
       <br />
       <User />
+      <br />
+      <AuthUser />
     </div>
   );
 }
