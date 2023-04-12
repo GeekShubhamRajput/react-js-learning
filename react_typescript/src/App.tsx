@@ -1,11 +1,19 @@
-import {Private} from "./components/auth/Private"
-import {Profile} from "./components/auth/Profile"
+import {List} from "./components/generics/List"
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Private isLoggedIn={false} component={Profile} />
+
+      <List items={[
+          {
+            id: 1, first_name: 'John', last_name: 'Doe'
+          },
+          {
+            id: 2, first_name: 'Micle', last_name: 'Clark'
+          },
+        ]}
+        onClick={(item)=> console.log(item)} />
     </div>
   );
 }
