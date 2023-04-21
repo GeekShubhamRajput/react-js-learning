@@ -1,10 +1,13 @@
-import {Toast} from "./components/templateliterals/Toast"
+import {Button} from "./components/html/Button"
+import {Input} from "./components/html/Input"
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Toast position='center' />
+      <Button variant='primary' onClick = {() => console.log('Clicked')}>Primary Button</Button>
+      <br />
+      <Input />
     </div>
   );
 }
