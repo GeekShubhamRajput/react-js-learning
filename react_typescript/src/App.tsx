@@ -1,10 +1,12 @@
 import './App.css';
-import {CustomComponent} from './components/html/CustomComponent'
+import {Text} from './components/polymorphic/Text'
 
 function App() {
   return (
     <div className="App">
-      <CustomComponent isLoggedIn={true} name="Shubham" />
+      <Text as="h1" size="sm" color="primary">Heading Text </Text>
+      <Text as="p" size="md" color="secondary">Paragraph </Text>
+      <Text as="label" htmlFor="someId" size="lg" color="primary">label </Text>
     </div>
   );
 }
